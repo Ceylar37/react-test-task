@@ -1,0 +1,62 @@
+.filedWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fieldLabel {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+
+  & > .filter {
+    border-radius: 6px;
+    padding: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color .3s;
+
+    &:hover {
+      background-color: var(--light);
+    }
+
+    &.active {
+      color: var(--white);
+      background-color: var(--orange);
+    }
+  }
+}
+
+.controls {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 300px;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 1px solid var(--gray);
+  outline: none;
+  padding: 4px;
+
+  font-size: 16px;
+}
+
+.select {
+  width: 150px;
+  height: 100%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid var(--gray);
+  border-left: none;
+  outline: none;
+  text-align: center;
+}
